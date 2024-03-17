@@ -4,7 +4,8 @@
 <head>
 	<title>Dashboard | My Profile</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -23,7 +24,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
 
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -47,58 +49,66 @@
 			</div>
 		</div>
 	</nav>
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/charles2.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Charles Iqbal Rizanta</span></h1>
-								<h2 class="mb-4">A Freelance Web Developer</h2>
-								<p><a href="https://api.whatsapp.com/send?phone=6282139077587"
-										class="btn btn-primary py-3 px-4">Hire me</a>
-									<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
-										works</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="slider-item">
-				<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url(images/charles.png);">
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth d-flex align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm a <span>web developer</span> based in Indonesia</h1>
-								<p><a href="https://api.whatsapp.com/send?phone=6282139077587"
-										class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section"
-										class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<style>
+    .hero {
+        overflow-y: auto; /* Menambahkan overflow-y untuk scrolling vertikal */
+        max-height: 100vh; /* Mengatur tinggi maksimal */
+    }
+</style>
+
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+                    data-scrollax-parent="true">
+                    <div class="one-third js-fullheight order-md-last img"
+                        style="background-image:url(images/charles2.png);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate"
+                        data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>Charles Iqbal Rizanta</span></h1>
+                            <h2 class="mb-4">A Freelance Web Developer</h2>
+                            <p><a href="https://api.whatsapp.com/send?phone=6282139077587"
+                                    class="btn btn-primary py-3 px-4">Hire me</a>
+                                <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
+                                    works</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+                    data-scrollax-parent="true">
+                    <div class="one-third js-fullheight order-md-last img"
+                        style="background-image:url(images/charles.png);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate"
+                        data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm a <span>web developer</span> based in Indonesia</h1>
+                            <p><a href="https://api.whatsapp.com/send?phone=6282139077587"
+                                    class="btn btn-primary py-3 px-4">Hire me</a> <a href="#projects-section"
+                                    class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
