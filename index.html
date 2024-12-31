@@ -50,34 +50,38 @@
 	</nav>
 	
 		<section id="home-section" class="hero">
-	  <div class="container">
-	    <div class="row d-md-flex no-gutters align-items-end justify-content-between">
-	      
-	      <!-- Bagian Gambar -->
-	      <div class="one-third js-fullheight order-md-last img" 
-	           style="background-image:url('images/charles2.png'); 
-	                  height: 100vh; 
-	                  width: 100%; 
-	                  background-size: cover; 
-	                  background-position: center;">
-	      </div>
-	      
-	      <!-- Bagian Teks -->
-	      <div class="one-forth d-flex align-items-center ftco-animate">
-	        <div class="text">
-	          <span class="subheading">Halo!</span>
-	          <h1 class="mb-4 mt-3">Saya <span>Charles Iqbal Rizanta</span></h1>
-	          <h2 class="mb-4">Pengembang Web Lepas</h2>
-	          <p>
-	            <a href="https://api.whatsapp.com/send?phone=6282139077587" class="btn btn-primary py-3 px-4">Pekerjakan saya</a>
-	            <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">Karya saya</a>
-	          </p>
-	        </div>
-	      </div>
-	      
-	    </div>
-	  </div>
-	</section>
+  <div class="container">
+    <!-- Row untuk menata gambar dan teks -->
+    <div class="row d-flex align-items-center">
+      <!-- Elemen teks di kiri -->
+      <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+        <div class="text">
+          <span class="subheading">Halo!</span>
+          <h1 class="mb-4 mt-3">Saya <span>Charles Iqbal Rizanta</span></h1>
+          <h2 class="mb-4">Pengembang Web Lepas</h2>
+          <p>
+            <a href="https://api.whatsapp.com/send?phone=6282139077587" class="btn btn-primary py-3 px-4">Pekerjakan saya</a>
+            <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">Karya saya</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Elemen gambar di kanan -->
+      <div class="col-md-6 order-1 order-md-2">
+        <div class="img" style="background-image: url('images/charles2.png'); height: 100%; background-size: cover; background-position: center; width: 100%; aspect-ratio: 1 / 1;"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      .img {
+        height: 300px; /* Atur ulang tinggi gambar untuk perangkat kecil */
+      }
+    }
+  </style>
+</section>
+
 
 
 
